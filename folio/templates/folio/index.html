@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    {% load static %}
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'folio/img/favicon.ico' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'folio/css/app.css' %}" />
+</head>
+
+<body role="main">
+    <div>
+        <div>
+            <div class="header-dark" style="padding-bottom:50px;">
+                <nav class="navbar navbar-dark navbar-expand-lg navigation-clean-search">
+                    <div class="container"><a class="navbar-brand" href="#">Louis Rothwell</a>
+                        <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span
+                                class="sr-only">Toggle navigation</span><span
+                                class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse d-xl-flex justify-content-xl-end" id="navcol-1">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item" role="presentation"></li>
+                            </ul>
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item" role="presentation"><a class="nav-link"
+                                        href="#about_sect">About</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link"
+                                        href="#interests_sect">Interests</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link"
+                                        href="#projects_sect">Projects</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link"
+                                        href="#contact_sect">Contact</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link"
+                                        href="https://drive.google.com/open?id=1omJ2SazVl0n9jwZTZVJYKwPVfVc3tEwm">CV</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container hero" id="about_sect">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <h1 class="text-center">Software Developer</h1>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                                        <div class="intro">
+                                            <img class="img-fluid center" alt="Profile Avatar"
+                                                src="{% static 'folio/img/myAvatar(1).png' %}">
+                                        </div>
+                                    </div>
+                                    <div class="text" style="color:white">
+                                        <p></p>
+                                        <!--<p>Sed lobortis mi. Suspendisse vel placerat ligula. ac sem lac. Ut vehicula
+                                            rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit
+                                            pulvinar dictum vel in justo. Vestibulum ante ipsum primis in faucibus orci
+                                            luctus et ultrices posuere cubilia Curae.</p>
+                                        <p>-->
+                                            <p></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p></p>
+                                </div>
+                                <div style="padding-top:40px; margin-top:0em" class="rounded-social-buttons">
+                                    <a class="social-button github" href="https://github.com/ljr97"></a>
+                                    <a class="social-button linkedin" href="https://www.linkedin.com/in/louisrothwell/"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sect-color" class="features-boxed">
+        <div class="container" id="interests_sect">
+            <div class="intro"></div>
+            <h2 class="text-center">Interests</h2>
+            <div class="row justify-content-center features">
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="iconify icon" data-icon="fa-solid:database"></i>
+                        <h3 class="name">Big Data</h3>
+                        <p class="description">Data Visualisation, Hadoop, Spark, Data Mining, Distributed Computing</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="iconify icon" data-icon="ant-design:database-filled"></i>
+                        <h3 class="name">Machine Learning</h3>
+                        <p class="description">Sentiment Analysis, Supervised/Unsupervised Learning</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="iconify icon" data-icon="uil-brain"></i>
+                        <h3 class="name">Artificial Intelligence</h3>
+                        <p class="description">Machine Vision. Neural Networks. Generative Adversarial Networks.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="iconify icon" data-icon="bx-bx-code-alt"></i>
+                        <h3 class="name">Object-Oriented Programming</h3>
+                        <p class="description">Java, Python, C#, JavaScript, Rust, C++, Ruby</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="iconify icon" data-icon="mdi-lambda"></i>
+                        <h3 class="name">Functional Programming</h3>
+                        <p class="description">Elixir, Haskell, Clojure, Elm. Scala, Lisp, Purescript</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="iconify icon" data-icon="fa-solid:network-wired"></i>
+                        <h3 class="name">Blockchain</h3>
+                        <p class="description">Solidity, Distributed Applications (Dapps), Smart Contracts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projects-clean" id="projects_sect">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Projects</h2>
+                <p class="text-center"> </p>
+            </div>
+            <div class="row projects">
+                <div class="col-sm-6 col-lg-4 item">
+                    <a href="https://github.com/ljr97/SpaceInvaders"><img style="height:232.97px; width:200px;"
+                            alt="Space Invaders Image" class="img-fluid" src="{% static 'folio/img/space3.png' %}"></a>
+                    <h3 class="name">Space Invaders</h3>
+                    <small class="name">Java</small>
+                    <p class="description">Space Invaders clone built in Java. Application was submitted as coursework
+                                            in first year of university.</p>
+                </div>
+                 <div class="col-sm-6 col-lg-4 item">
+                    <a href="https://github.com/ljr97/pycrawler"><img style="height:232.97px; width:200px;"
+                            alt="Python Web Crawler" class="img-fluid" src="{% static 'folio/img/webcrawl2.jpeg' %}"></a>
+                    <h3 class="name">Python Web Crawler</h3>
+                    <small class="name">Python</small>
+                    <p class="description">Simple web crawler built using Python.</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item">
+                    <a href="https://github.com/ljr97/port-django"><img style="height:232.97px; width:200px;"
+                            alt="Space Invaders Image" class="img-fluid" src="{% static 'folio/img/myAvatar(1).png' %}"></a>
+                    <h3 class="name">Portfolio</h3>
+                    <small class="name">Django</small>
+                    <p class="description">Code for this portfolio. Built using Django framework.</p>
+                </div>        
+                <div class="col-sm-6 col-lg-4 item">
+                    <a href="https://github.com/ljr97/pygame-ai"><img style="height:232.97px; width:200px;"
+                            alt="Space Invaders Image" class="img-fluid" src="{% static 'folio/img/ai.jpg' %}"></a>
+                    <h3 class="name">Python Game AI</h3>
+                    <small class="name">Python</small>
+                    <p class="description">AI for a simpe game. Built using Python</p>
+                </div>       
+                <div class="col-sm-6 col-lg-4 item">
+                    <a href="https://github.com/ljr97/identicon"><img class="img-fluid" alt="Identicon Image"
+                            style="height:232.97px; width:250px;" src="{% static 'folio/img/identicon1.png' %}"></a>
+                    <h3 class="name">Identicon</h3>
+                    <small class="name">Elixir</small>
+                    <p class="description">Simple Elixir application that turns input strings into Identicons,
+                                            for example, the ones used by Github.</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item">
+                    <a href="https://github.com/ljr97/research-project"><img alt="Research Project Image"
+                            style="height:232.97px; width:250px;" class="img-fluid"
+                            src="{% static 'folio/img/rp1.png' %}"></a>
+                    <h3 class="name">Semantic Segmentation</h3>
+                    <small class="name">Python</small>
+                    <p class="description">An investigation into semantic segmentation using deep learning techniques.
+                                            Synthetic data was also generated using DCGAN.</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item">
+                    <a href="https://github.com/ljr97/CB18"><img alt="Research Project Image"
+                            style="height:232.97px; width:250px;" class="img-fluid"
+                            src="{% static 'folio/img/binance.jpg' %}"></a>
+                    <h3 class="name">Binance Trading Bot</h3>
+                    <small class="name">Elixir/Phoenix</small>
+                    <p class="description">A fully-automated, self-sufficent trading bot using the Binance platform.
+                                            </p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item">
+                    <a href="https://github.com/ljr97/research-project"><img alt="Research Project Image"
+                            style="height:232.97px; width:250px;" class="img-fluid"
+                            src="{% static 'folio/img/RTD.jpg' %}"></a>
+                    <h3 class="name">RTD App</h3>
+                    <small class="name">C#, .NET</small>
+                    <p class="description">** Upcoming **</p>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <div class="article-clean"></div>
+    <div></div>
+    <div></div>
+    <div id="sect-color" class="contact-clean">
+        <form id="contact_sect" method="post">
+            <h2 class="text-center">Contact</h2>
+            <div class="form-group">
+                <input class="form-control" type="text" name="name" placeholder="Name" id="name_box"
+                    onchange="handleName()" /> <small class="form-text text-danger" style="padding-left: 25px"
+                    id="nameError">Name must at least 2
+                    characters.</small>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="email" name="email" placeholder="Email" id="email_box" ,
+                    onchange="handleEmail()" />
+                <small class="form-text text-danger" style="padding-left: 25px" id="emailError">Please enter a valid
+                    email.</small>
+
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" name="message" placeholder="Message" rows="14" id="message_box" ,
+                    onchange="handleMessage()"></textarea> <small class="form-text text-danger"
+                    style="padding-left: 25px" id="messageError">Message must be at leat 2
+                    characters.</small>
+                <button class="btn btn-primary" type="submit" id="subform_butt">send </button>
+            </div>
+        </form>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="https://github.com/ljr97"><i class="iconify" data-icon="ion-social-github"
+                        data-inline="false"></i></a><a href="https://www.linkedin.com/in/louisrothwell/"><i
+                        class="iconify" data-icon="simple-line-icons:social-linkedin" data-inline="false"></i></a>
+                <p></p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#about_sect">About</a></li>
+                    <li class="list-inline-item"><a href="#interests_sect">Interests</a></li>
+                    <li class="list-inline-item"><a href="#projects_sect">Projects</a></li>
+                    <li class="list-inline-item"><a href="#contact_sect">Contact</a></li>
+                    <li class="list-inline-item"><a
+                            href="https://drive.google.com/open?id=1omJ2SazVl0n9jwZTZVJYKwPVfVc3tEwm">CV</a></li>
+                </ul>
+                <p class="copyright">Louis Rothwell 2020</p>
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        var isName = false;
+        var isEmail = false;
+        var isMessage = false;
+
+        function init() {
+            console.log("Hey")
+            document.getElementById("subform_butt").disabled = true;
+            document.getElementById("nameError").style.display = 'none';
+            document.getElementById("emailError").style.display = 'none';
+            document.getElementById("messageError").style.display = 'none';
+        }
+
+        // Check if name is long enough
+        function handleName() {
+            var str = document.getElementById("name_box").value;
+            str = str.replace(/\s+/g, '');
+            var x = document.getElementById("nameError");
+            if (str.length >= 2) {
+                x.style.display = 'none';
+                isName = true;
+            } else {
+                x.style.display = 'block';
+            }
+            checkSubmit()
+        }
+
+        // Check if email is valid
+        function handleEmail() {
+            var str = document.getElementById("email_box").value;
+            str = str.replace(/\s+/g, '');
+            var x = document.getElementById("emailError");
+            if ((str.length > 2) && (str.includes("@"))) {
+                x.style.display = 'none';
+                isEmail = true;
+            } else {
+                x.style.display = 'block';
+            }
+            checkSubmit()
+        }
+
+        // Check if message is long enough
+        function handleMessage() {
+            var str = document.getElementById("message_box").value;
+            str = str.replace(/\s+/g, '');
+            var x = document.getElementById("messageError");
+            if (str.length > 2) {
+                x.style.display = 'none';
+                isMessage = true;
+            } else {
+                x.style.display = 'block';
+            }
+            checkSubmit()
+        }
+
+        function checkSubmit() {
+            if ((isName) && (isEmail) && (isMessage)) {
+                document.getElementById("subform_butt").disabled = false;
+            } else { }
+        }
+
+        window.onload = init()
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
+    <script src="{% static 'folio/js/app.js' %}"></script>
+</body>
+
+</html>
